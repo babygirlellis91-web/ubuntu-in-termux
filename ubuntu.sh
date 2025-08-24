@@ -1,11 +1,16 @@
 #!/data/data/com.termux/files/usr/bin/bash
-
 time1="$( date +"%r" )"
 
 install1 () {
 directory=ubuntu-fs
+<<<<<<< Updated upstream
 UBUNTU_VERSION=20.04.3
 if [ -d "$directory" ];then
+=======
+UBUNTU_VERSION='24.10'
+
+
+>>>>>>> Stashed changes
 first=1
 printf "\x1b[38;5;214m[${time1}]\e[0m \x1b[38;5;227m[WARNING]:\e[0m \x1b[38;5;87m Skipping the download and the extraction\n"
 elif [ -z "$(command -v proot)" ];then
